@@ -2,10 +2,10 @@ package loop;
 
 public class forLoop {
 	public static void main(String[] args) {
-		int i=1;
-		for(;i<5;) {
-			System.out.println(i);
-			i++;
+		for (char c = 'a';c<='s';c++) {
+			if(c%2==0) {
+				System.out.println(c+" --> "+(int)c);
+			}
 		}
 	}
 }
