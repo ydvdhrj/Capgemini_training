@@ -1,0 +1,14 @@
+package array;
+
+public class T6 {
+	public static void main(String[] args) {
+		int[] arr = {1,2,3,4,5,6,10};
+		int mx = Integer.MIN_VALUE;
+		for(int i:arr) {
+			if(i>mx) {
+				mx = i;
+			}
+		}
+		System.out.println("max value is "+mx);
+	}
+}
