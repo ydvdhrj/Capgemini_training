@@ -3,8 +3,6 @@ package OopsFaundamentals;
 public class Book {
 	int a=20;
 	{
-		int b = 30;
-		System.out.println(b);
 		System.out.println(a);
 		System.out.println("from IIB 1");
 	}
