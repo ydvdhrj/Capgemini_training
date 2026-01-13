@@ -1,0 +1,7 @@
+package ExceptionHandlingQuestions;
+
+public class OutOfStockException extends Exception{
+	OutOfStockException(String msg){
+		super(msg);
+	}
+}
