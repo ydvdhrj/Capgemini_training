@@ -1,7 +1,9 @@
 package fileHandling;
 
 import java.io.File;
+import java.io.FileInputStream;
 import java.io.FileOutputStream;
+import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 
 public class StudentDriver {
@@ -15,5 +17,13 @@ public static void main(String[] args)throws Exception {
 	os.writeObject(s);
 	os.close();
 	fs.close();
+	
+//	to convert byte to obj
+	FileInputStream fis  = new FileInputStream("student.txt");
+	ObjectInputStream ois = new ObjectInputStream(fis);
+	Student ss = (Student)ois.readObject();
+	System.out.println(ss.sid); //101
+	System.out.println(ss.sname); //dingiluu
+	System.out.println(ss);
 }
 }

@@ -1,6 +1,7 @@
 package fileHandling;
 
 import java.io.*;
+import java.util.Scanner;
 
 public class Example {
 public static void main(String[] args) throws IOException{
@@ -78,6 +79,23 @@ public static void main(String[] args) throws IOException{
 	while((reading = br.readLine())!=null) {
 		System.out.println(reading);
 	}
+
+	
+//	reading using scanner line by line
+//	Scanner s = new Scanner(f1);
+//	while(s.hasNextLine()) {
+//		String data = s.nextLine();
+//		System.out.println(data);
+//	}
+	
+	
+//	reading using scanner word by word
+//	Scanner s = new Scanner(f1);
+//	while(s.hasNext()) {
+//		String data = s.next();
+//		System.out.println(data);
+//	}
+	
 	
 //	delete the file using delete keyword
 	File f3 = new File(f,"Sample3.java");
