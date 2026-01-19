@@ -19,5 +19,9 @@ public static void main(String[] args) {
 	Student s2 = (Student) al1.get(4);
 	
 	System.out.println(s2.sid);
+	
+	for(Object o:al1) {
+		System.out.println(o);
+	}
 }
 }
